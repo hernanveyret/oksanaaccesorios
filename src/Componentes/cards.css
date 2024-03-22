@@ -1,0 +1,128 @@
+/*
+.card {
+    border: thin solid grey;
+    width: 47%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.75rem;
+    box-shadow: 3px 3px 4px grey;
+}
+*/
+.tarjeta {
+    border: thin solid grey;
+    width: 47%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.75rem;
+    box-shadow: 3px 3px 4px grey;
+    position: relative;
+}
+.tarjeta:hover {
+    border: 2px solid #ff69b4;
+}
+.titulo {
+    margin: 3px;
+}
+.tarjeta img {
+    width: 90%;
+}
+.navCard {
+    width: 100%;
+   /* background-color: rgb(75, 72, 72);*/
+    background-color: #ff69b4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-radius: 0 0 0.75rem 0.75rem;
+}
+.Descripcion {
+    width: 90%;
+    min-height: 60px;
+    margin: 5px 0;
+    text-align: cener;
+    font-size: .9em;
+}
+p {
+    margin-top: 5px;
+}
+.btnCard {
+    border: none;
+    width: 20px;
+    background: transparent;
+    z-index: 9;
+    margin-left: 15px;
+}
+.btn:hover {
+    filter: drop-shadow(3px 3px 5px black);
+}
+.btnCard img {
+    width: 100%;
+    filter: drop-shadow(3px 3px 6px black);
+}
+.btnCard:hover {
+    cursor: pointer;
+}
+.carrito {
+    background-image: url("../img/masproductos.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    font-size: 0;
+}
+.carrito:hover {
+    filter: drop-shadow(3px 3px 5px black);
+}
+.lupa {
+    background-image: url("../img/lupa.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    font-size: 0;
+}
+.lupa:hover {
+    filter: drop-shadow(3px 3px 5px black);
+}
+select {
+    padding: 5px;
+    text-align: center;
+}
+option {
+    padding: 5px;
+}
+
+.validacion-talles {
+    color: red;
+    font-size: 0.8rem;
+}
+.cartel-oferta {
+    width: auto;
+    height: auto;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    font-size: .8em;
+    position: absolute;
+    right: 1em;
+    top: 2em;
+    right: 0;
+    transform: rotate(20deg);
+    box-shadow: 2px 2px 5px grey;
+}
+@media screen and (min-width: 1024px) {
+    .tarjeta {
+        width: 20%;
+    }
+   
+    option {
+        padding: 5px;
+    }
+  }

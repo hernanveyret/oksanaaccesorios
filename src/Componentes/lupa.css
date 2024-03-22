@@ -1,0 +1,36 @@
+.contenedorLupa {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.74);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 30;
+}
+.contenedor-img {
+    width: 30rem;
+    position: relative; 
+}
+.contenedor-img img {
+    width: 100%;
+}
+.btnCerrar {    
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1.5rem;
+}
+.btnCerrar:hover {
+    cursor: pointer;
+}
+@media screen and (max-width: 460px) {    
+   
+    .contenedor-img {
+        width: 95%;
+    }
+}

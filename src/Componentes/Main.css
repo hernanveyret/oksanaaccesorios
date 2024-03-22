@@ -1,0 +1,149 @@
+@font-face {
+    font-family: nicole;
+    src: url(../font/Niconne-Regular.ttf);
+  }
+header {
+    background:linear-gradient(#ff9ce6,#ff69b4);
+    width: 100%;
+    font-family: nicole;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 0 0 0.75rem 0.75rem;
+    position:sticky;
+    background: white;
+    top: 0;
+    z-index: 20;
+}
+.btnNav {
+    border: none;
+    margin: 0 5px;
+    background: transparent;
+    padding: 5px;
+}
+.btnNav:hover {
+    cursor: pointer;
+}
+.btnNav img {
+    width: 50%;
+    filter:drop-shadow(3px 3px 5px grey);
+}
+.btnNav img:hover {
+    filter: drop-shadow(3px 3px 6px black);
+}
+section {
+    width: 100%;
+    min-height: 83vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.whatsAap {
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/whatsaap.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    right: 10px;
+    bottom: 85px;
+    font-size: 0;
+}
+.whatsAap,.flecha:hover {
+    cursor: pointer;
+}
+.flecha {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 10px;
+    bottom: 130px;
+    font-size: 0;
+    background-image: url("../img/flechaUp.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.loading {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-color: transparent;    
+}
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #dedede;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+    padding-bottom: 5px;
+}
+.footer-oksana {
+width: 50%;
+display: flex;
+}
+.footer-oksana p {
+    margin-left: 10px;
+}
+.footer-oksana a {
+    margin-left: 10px;
+}
+.footer-diseñador{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.footer-diseñador p {
+    margin-right: 10px;
+}
+.ico-facebook {
+    display: block;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/faceOff.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 0.3rem;
+}
+.ico-instagram {
+    display: block;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/instaOff.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+.ico-facebook:hover {
+    display: block;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/faceOn.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 0.3rem;
+}
+.ico-instagram:hover {
+    display: block;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/instaOn.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}

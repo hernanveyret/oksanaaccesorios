@@ -1,0 +1,74 @@
+.contenedorBanner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff9ce6;
+    position: fixed;
+    top: 0;
+    z-index: 30;
+}
+.contenedorImg {
+    width: 50%;
+    height: 100vh;  
+}
+.mediaBola {
+    width:200%;
+    height: 100%;
+    background-color: #ff69b4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transform: translateX(-50%);
+    animation: animacion 2s linear;
+}
+.img-logo {
+    width: 40%;
+    filter:drop-shadow(-20px 20px 10px rgba(0, 0, 0, 0.425));
+}
+.textoBienvenida {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: aparecer 2s linear;
+}
+.btn-entrar {
+    padding: 10px;
+    background-color: #282c34;
+    color: white;
+    cursor:pointer;
+    margin: 10px 0;
+}
+.titulo-inicio {
+    color: white;
+}
+@keyframes animacion {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-50%);
+    }   
+}
+
+@keyframes aparecer {
+    0% {
+        filter: blur(10px)
+    }
+    50% {
+        filter: blur(0px)
+    }
+}
+@media screen and (min-width: 1024px) {
+    .img-logo {
+        width: 30%;
+        filter:drop-shadow(-20px 20px 10px rgba(0, 0, 0, 0.425));
+        margin: 0 100px 0 0;
+    }   
+}
+

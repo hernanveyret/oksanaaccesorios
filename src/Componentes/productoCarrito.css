@@ -1,0 +1,118 @@
+.cadaProducto {
+    width: 95%;
+    height: 80px;
+    border-bottom: thin solid grey;
+    border-radius: 0.75em;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+    padding-bottom: 10px;
+}
+.imgProducto {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.accion {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgProducto img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.75rem;
+}
+.descriptcionProducto {
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navBtn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    width: 100%;  
+    border: 1px solid black;
+    border-radius: 0.75em;
+    padding: 3px;
+}
+.navBtn button {
+    border-radius: 5px;
+    margin: 0 10px 0 0;
+    border: none;    
+}
+.navBtn button:hover {
+    cursor: pointer;
+}
+.btnSumar {
+    width: 25px;
+    height: 25px;    
+    background: transparent;
+    background-image: url("../img/sumar.webp");
+    background-size: cover;
+}
+.btnRestar {
+    width: 25px;
+    height: 25px;    
+    background: transparent;
+    background-image: url("../img/restar.webp");
+    background-size: cover;
+}
+.btnBorrar {
+    width: 23px;
+    height: 23px;    
+    background: transparent;
+    background-image: url("../img/basura.webp");
+    background-size: cover;
+}
+.btnBorrar:hover {
+    background-image: url("../img/basura2.webp");
+    background-size: cover;
+}
+
+.btnBorrar:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+    .descriptcionProducto {
+        width:80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; 
+    }
+    .descriptcionProducto p {
+        margin: 0 10px 0 0;
+    }
+    .imgProducto img {
+     width: 30%;
+    }
+    .imgProducto {
+        align-items: flex-start;
+    }
+    .cadaProducto {
+        width: 70%;
+    }   
+    .accion {
+        width:10%;
+    }
+    .accion p {
+        margin-right: 15px;
+    }
+    .navBtn {  
+        width: 100%;
+    }
+} 
