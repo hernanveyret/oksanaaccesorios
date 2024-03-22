@@ -47,8 +47,8 @@ const Main = () => {
   const [loading, setLoading] = useState(false)
   const [cantidadProductos, setCantidadProductos] = useState(0)
 
-  const url = "http://localhost:5000/ofertas"  
-  //const url = "https://raw.githubusercontent.com/hernanveyret/ofertAppV2/main/src/Api/data.json"
+  //const url = "http://localhost:5000/ofertas"  
+  const url = "https://raw.githubusercontent.com/hernanveyret/oksanaaccesorios/main/src/Api/data.json"
 
  useEffect(() => {
    const dataFetch = async () => {    
