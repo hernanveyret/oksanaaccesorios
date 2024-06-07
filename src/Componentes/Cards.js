@@ -1,38 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import FavOffNav from "../img/fav.webp";
 import FavOn from "../img/favOn.webp";
 import "./cards.css";
+import Select from './Select';
+import SelectXnumero from './SelectXnumero';
 
 const Cards = ({ openModal,data,idFavorito,ingresarProductos,setProductoVendido,setTalleSelect }) => {
 
+
 let idValidacionTalle = data.id + "talle";
   
-  //crea un select con talles unicos o con letras
-const Select = ({data}) => {
-  const [ options, setOptions] = useState([])
-  useEffect(() => {
-    setOptions(data.talle)
-  },[data])
-  return (
-        options.map((e,i) => {
-          return <option value={e} key={i}>{e}</option>
-        })
-  )
-}
-
-//crea un select con talles en numeros
-const SelectXnumero = ({data}) => {
-    //let talles =  data.talleFin - data.talleInit
-  let talles = [] 
-  for ( let i = data.talleInit; i <= data.talleFin; i++){
-      talles.push(i)
-  }
-     
-  return (
-       talles.map((e,i) => <option key={i} value={e}>{e}</option>)
-  )
-}
-
  // Indica el talle seleccionado
  const selectNumber = (talle) => {
   let talleProducto = talle.currentTarget.value;
