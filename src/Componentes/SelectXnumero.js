@@ -8,7 +8,10 @@ const SelectXnumero = ({data}) => {
         talles.push(i)
     }      
     return (
-         talles.map((e,i) => <option key={i} value={e}>{e}</option>)
+        <select  id={`${data.id}select`}>
+            <option>Talles</option>
+         { talles.map((e,i) => <option key={i} value={e}>{e}</option>)}
+         </select>
     )
 }
 

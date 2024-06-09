@@ -5,27 +5,19 @@ import "./cards.css";
 import Select from './Select';
 import SelectXnumero from './SelectXnumero';
 
-const Cards = ({ openModal,data,idFavorito,ingresarProductos,setProductoVendido,setTalleSelect }) => {
+const Cards = ({ openModal,data,idFavorito,ingresarProductos,setProductoVendido}) => {
 
+let idValidacionTalle = data.id + "talle"; 
 
-let idValidacionTalle = data.id + "talle";
-  
- // Indica el talle seleccionado
- const selectNumber = (talle) => {
-  let talleProducto = talle.currentTarget.value;
-  setTalleSelect(talleProducto) 
- }
- 
   return (
     <div className="tarjeta" key={data.key}>
       <h4 className="titulo">{data.titulo}</h4>
         <img src={data.vendido ? data.imagenStock : data.imagen} alt="imagen" />
           <p className="validacion-talles" id={idValidacionTalle}></p>
           { data.off && <p className="cartel-oferta">OFERTA!!!</p> }
-          <select onChange={selectNumber}>
-            <option>Talles</option>
-            {data.talle.length > 0 ? <Select data={data}/> : <SelectXnumero data={data}/>}          
-          </select>
+          
+            {data.talle.length > 0 ? <Select data={data} /> : <SelectXnumero data={data} />}          
+          
           <div className="Descripcion">
             <p>{data.descripcion}</p>
           </div>
